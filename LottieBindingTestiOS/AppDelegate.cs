@@ -15,11 +15,11 @@ public class AppDelegate : UIApplicationDelegate
         // create a UIViewController with a single UILabel
         var vc = new UIViewController();
         var platformView = new SwiftLottieWrapper();
-        platformView.SetAnimationWithAnimation("loading_wave.json");
+        platformView.SetAnimationWithAnimation("AnimationFiles/loading_wave");
         platformView.InitAnimation();
         // var platformView = new UIView();
         // platformView.BackgroundColor = UIColor.Yellow;
-        vc.View.BackgroundColor = UIColor.SystemPink;
+        vc.View.BackgroundColor = UIColor.SystemOrange;
         vc.View!.AddSubview(platformView.View);
         platformView.View.TranslatesAutoresizingMaskIntoConstraints = false;
         var lottieConstraints = new[]

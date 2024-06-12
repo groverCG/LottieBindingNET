@@ -25,10 +25,4 @@
             <SmartLink>True</SmartLink>
         </NativeReference>
     </ItemGroup>
-    <ItemGroup>
-      <Folder Include="NativeReferences\" />
-    </ItemGroup>
-    <ItemGroup>
-      <Content Include="NativeReferences\SwiftLottieWrapper.xcframework\.DS_Store" />
-    </ItemGroup>
 </Project>
