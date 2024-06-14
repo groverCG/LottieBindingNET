@@ -12,9 +12,9 @@ namespace iOSFullLottieBinding
 	interface AnimatedControl
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)aDecoder __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder aDecoder);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder aDecoder);
 
 		// @property (getter = isEnabled, nonatomic) BOOL enabled;
 		[Export ("enabled")]
@@ -54,9 +54,9 @@ namespace iOSFullLottieBinding
 	interface AnimatedButton
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)aDecoder __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder aDecoder);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder aDecoder);
 
 		// -(BOOL)beginTrackingWithTouch:(UITouch * _Nonnull)touch withEvent:(UIEvent * _Nullable)event __attribute__((warn_unused_result("")));
 		[Export ("beginTrackingWithTouch:withEvent:")]
@@ -76,9 +76,9 @@ namespace iOSFullLottieBinding
 	interface AnimatedSwitch
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)aDecoder __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder aDecoder);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder aDecoder);
 
 		// -(void)endTrackingWithTouch:(UITouch * _Nullable)touch withEvent:(UIEvent * _Nullable)event;
 		[Export ("endTrackingWithTouch:withEvent:")]
@@ -109,9 +109,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (CGRect frame);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)coder __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder coder);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder coder);
 	}
 
 	// @interface BaseAnimationLayer : CALayer
@@ -128,9 +128,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)coder __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder coder);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder coder);
 	}
 
 	// @interface BaseCompositionLayer : BaseAnimationLayer
@@ -139,9 +139,9 @@ namespace iOSFullLottieBinding
 	interface BaseCompositionLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -222,9 +222,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (CGRect frame);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)coder __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder coder);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder coder);
 
 		// @property (nonatomic, strong) CompatibleAnimation * _Nullable compatibleAnimation;
 		[NullAllowed, Export ("compatibleAnimation", ArgumentSemantic.Strong)]
@@ -391,9 +391,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 	}
 
 	// @interface CoreAnimationLayer : BaseAnimationLayer
@@ -407,9 +407,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(void)layoutSublayers;
 		[Export ("layoutSublayers")]
@@ -439,9 +439,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)coder __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder coder);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder coder);
 	}
 
 	// @interface DebugLayer : CALayer
@@ -450,9 +450,9 @@ namespace iOSFullLottieBinding
 	interface DebugLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 	}
 
 	// @interface GradientRenderLayer : CAGradientLayer
@@ -465,9 +465,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)coder __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder coder);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder coder);
 	}
 
 	// @interface GroupLayer : BaseAnimationLayer
@@ -476,9 +476,9 @@ namespace iOSFullLottieBinding
 	interface GroupLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -496,9 +496,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 	}
 
 	// @interface ImageLayer : BaseCompositionLayer
@@ -506,9 +506,9 @@ namespace iOSFullLottieBinding
 	interface ImageLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -521,9 +521,9 @@ namespace iOSFullLottieBinding
 	interface InfiniteOpaqueAnimationLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -546,9 +546,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(void)drawInContext:(CGContextRef _Nonnull)ctx;
 		[Export ("drawInContext:")]
@@ -566,9 +566,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 	}
 
 	// @interface LottieAnimationViewBase : UIView
@@ -601,9 +601,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (CGRect frame);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)coder __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder coder);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder coder);
 	}
 
 	// @interface LottieAnimationView : LottieAnimationViewBase
@@ -616,9 +616,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (CGRect frame);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)aDecoder __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder aDecoder);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder aDecoder);
 
 		// @property (readonly, nonatomic) CGSize intrinsicContentSize;
 		[Export ("intrinsicContentSize")]
@@ -648,9 +648,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// +(BOOL)needsDisplayForKey:(NSString * _Nonnull)key __attribute__((warn_unused_result("")));
 		[Static]
@@ -677,9 +677,9 @@ namespace iOSFullLottieBinding
 	interface MaskCompositionLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -709,9 +709,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 	}
 
 	// @interface NullCompositionLayer : CompositionLayer
@@ -719,9 +719,9 @@ namespace iOSFullLottieBinding
 	interface NullCompositionLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -734,9 +734,9 @@ namespace iOSFullLottieBinding
 	interface PreCompLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -754,9 +754,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 	}
 
 	// @interface RepeaterLayer : BaseAnimationLayer
@@ -765,9 +765,9 @@ namespace iOSFullLottieBinding
 	interface RepeaterLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -785,9 +785,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 	}
 
 	// @interface ShapeContainerLayer : CALayer
@@ -795,9 +795,9 @@ namespace iOSFullLottieBinding
 	interface ShapeContainerLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -811,9 +811,9 @@ namespace iOSFullLottieBinding
 	interface ShapeItemLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -826,9 +826,9 @@ namespace iOSFullLottieBinding
 	interface ShapeLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -847,9 +847,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(void)drawInContext:(CGContextRef _Nonnull)ctx;
 		[Export ("drawInContext:")]
@@ -866,9 +866,9 @@ namespace iOSFullLottieBinding
 		NativeHandle Constructor (NSObject layer);
 
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 	}
 
 	// @interface SolidLayer : BaseCompositionLayer
@@ -876,9 +876,9 @@ namespace iOSFullLottieBinding
 	interface SolidLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -891,9 +891,9 @@ namespace iOSFullLottieBinding
 	interface TextCompositionLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -906,9 +906,9 @@ namespace iOSFullLottieBinding
 	interface TextLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder _);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder _);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]
@@ -921,9 +921,9 @@ namespace iOSFullLottieBinding
 	interface TransformLayer
 	{
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)__argument1 __attribute__((objc_designated_initializer));
-		[Export ("initWithCoder:")]
-		[DesignatedInitializer]
-		NativeHandle Constructor (NSCoder __argument1);
+		// [Export ("initWithCoder:")]
+		// [DesignatedInitializer]
+		// NativeHandle Constructor (NSCoder __argument1);
 
 		// -(instancetype _Nonnull)initWithLayer:(id _Nonnull)layer __attribute__((objc_designated_initializer));
 		[Export ("initWithLayer:")]

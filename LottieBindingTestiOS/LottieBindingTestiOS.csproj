@@ -7,6 +7,6 @@
         <SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
     </PropertyGroup>
     <ItemGroup>
-      <ProjectReference Include="..\iOSSlimLottieBinding\iOSSlimLottieBinding.csproj" />
+      <ProjectReference Include="..\iOSFullLottieBinding\iOSFullLottieBinding.csproj" />
     </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
-using iOSSlimLottieBinding;
+using iOSFullLottieBinding;
+// using iOSSlimLottieBinding;
 
 namespace LottieBindingTestiOS;
 
@@ -14,20 +15,40 @@ public class AppDelegate : UIApplicationDelegate
 
         // create a UIViewController with a single UILabel
         var vc = new UIViewController();
-        var platformView = new SwiftLottieWrapper();
-        platformView.SetAnimationWithAnimation("AnimationFiles/loading_wave");
-        platformView.PlayAnimation();
+        // var platformView = new SwiftLottieWrapper();
+        // platformView.SetAnimationWithAnimation("AnimationFiles/loading_wave");
+        // platformView.PlayAnimation();
+        // vc.View.BackgroundColor = UIColor.SystemOrange;
+        // vc.View!.AddSubview(platformView.View);
+        // platformView.View.TranslatesAutoresizingMaskIntoConstraints = false;
+        // var lottieConstraints = new[]
+        // {
+        //     platformView.View.WidthAnchor.ConstraintEqualTo(200),
+        //     platformView.View.HeightAnchor.ConstraintEqualTo(200),
+        //     platformView.View.CenterYAnchor.ConstraintEqualTo(vc.View.CenterYAnchor),
+        //     platformView.View.CenterXAnchor.ConstraintEqualTo(vc.View.CenterXAnchor)
+        // };
+        //
+        // NSLayoutConstraint.DeactivateConstraints(lottieConstraints);
+        // NSLayoutConstraint.ActivateConstraints(lottieConstraints);
+
+        var animationView = new CompatibleAnimationView();
+        animationView.ContentMode = UIViewContentMode.ScaleAspectFit;
+        animationView.CompatibleAnimation = new CompatibleAnimation("loading_wave.json","AnimationFiles", NSBundle.MainBundle);
+        animationView.LoopAnimationCount = nfloat.PositiveInfinity;
+        // animationView.
+        animationView.Play();
         vc.View.BackgroundColor = UIColor.SystemOrange;
-        vc.View!.AddSubview(platformView.View);
-        platformView.View.TranslatesAutoresizingMaskIntoConstraints = false;
+        vc.View!.AddSubview(animationView);
+        animationView.TranslatesAutoresizingMaskIntoConstraints = false;
         var lottieConstraints = new[]
         {
-            platformView.View.WidthAnchor.ConstraintEqualTo(200),
-            platformView.View.HeightAnchor.ConstraintEqualTo(200),
-            platformView.View.CenterYAnchor.ConstraintEqualTo(vc.View.CenterYAnchor),
-            platformView.View.CenterXAnchor.ConstraintEqualTo(vc.View.CenterXAnchor)
+            animationView.WidthAnchor.ConstraintEqualTo(200),
+            animationView.HeightAnchor.ConstraintEqualTo(200),
+            animationView.CenterYAnchor.ConstraintEqualTo(vc.View.CenterYAnchor),
+            animationView.CenterXAnchor.ConstraintEqualTo(vc.View.CenterXAnchor)
         };
-
+        
         NSLayoutConstraint.DeactivateConstraints(lottieConstraints);
         NSLayoutConstraint.ActivateConstraints(lottieConstraints);
         Window.RootViewController = vc;
