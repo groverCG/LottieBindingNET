@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0-android</TargetFramework>
+        <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <AndroidAarLibrary Include="app-release.aar" />
+    </ItemGroup>
+
+    <ItemGroup>
+<!--        <PackageReference Include="Square.OkIO" Version="3.8.0.1" />-->
+<!--        <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.1.10" />-->
+<!--        <PackageReference Include="Xamarin.AndroidX.AppCompat.AppCompatResources" Version="1.6.1.11" />-->
+        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.9.23.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DroidFullLottieBinding\DroidFullLottieBinding.csproj" />
+    </ItemGroup>
+</Project>

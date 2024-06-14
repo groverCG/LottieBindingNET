@@ -1,4 +1,4 @@
-using iOSLottieBinding;
+using iOSSlimLottieBinding;
 
 namespace LottieBindingTestiOS;
 
@@ -16,16 +16,14 @@ public class AppDelegate : UIApplicationDelegate
         var vc = new UIViewController();
         var platformView = new SwiftLottieWrapper();
         platformView.SetAnimationWithAnimation("AnimationFiles/loading_wave");
-        platformView.InitAnimation();
-        // var platformView = new UIView();
-        // platformView.BackgroundColor = UIColor.Yellow;
+        platformView.PlayAnimation();
         vc.View.BackgroundColor = UIColor.SystemOrange;
         vc.View!.AddSubview(platformView.View);
         platformView.View.TranslatesAutoresizingMaskIntoConstraints = false;
         var lottieConstraints = new[]
         {
-            platformView.View.WidthAnchor.ConstraintEqualTo(100),
-            platformView.View.HeightAnchor.ConstraintEqualTo(100),
+            platformView.View.WidthAnchor.ConstraintEqualTo(200),
+            platformView.View.HeightAnchor.ConstraintEqualTo(200),
             platformView.View.CenterYAnchor.ConstraintEqualTo(vc.View.CenterYAnchor),
             platformView.View.CenterXAnchor.ConstraintEqualTo(vc.View.CenterXAnchor)
         };

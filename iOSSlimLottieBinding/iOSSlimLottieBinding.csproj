@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0-ios</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>true</ImplicitUsings>
+        <IsBindingProject>true</IsBindingProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+        <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <NativeReference Include="NativeReferences/SwiftLottieWrapper.xcframework">
+            <Kind>Framework</Kind>
+            <Frameworks>Foundation UIKit</Frameworks>
+            <SmartLink>True</SmartLink>
+        </NativeReference>
+    </ItemGroup>
+    <ItemGroup>
+        <NativeReference Include="NativeReferences/Lottie.xcframework">
+            <Kind>Framework</Kind>
+            <Frameworks>Foundation UIKit</Frameworks>
+            <SmartLink>True</SmartLink>
+        </NativeReference>
+    </ItemGroup>
+</Project>
